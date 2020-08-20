@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--Links - Syntax-->
+<p><a href="https://www.w3schools.com/">link text</a></p>
+
+<pre>
+    O targetatributo pode ter um dos seguintes valores:
+
+    _self- Padrão. Abre o documento na mesma janela / guia em que foi clicado
+    _blank - Abre o documento em uma nova janela ou guia
+    _parent - Abre o documento no quadro pai
+    _top - Abre o documento em todo o corpo da janela
+</pre>
+
+
+<p>
+<!--    Use target = "_ blank" para abrir o documento vinculado em uma nova janela ou guia do navegador:-->
+    <a href="https://www.w3schools.com/" Target="_blank">target com _black</a>
+    Abre o documento em uma nova janela ou guia
+</p>
+
+
+<!--
+    URLs absolutos vs. URLs relativos
+    Ambos os exemplos acima estão usando um URL absoluto (um endereço da web completo) no hrefatributo.
+    Um link local (um link para uma página no mesmo site) é especificado com um URL relativo (sem a parte "https: // www")
+-->
+<h2>absolutos URLs</h2>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h2>relativos URLs</h2>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+
+
+<!--Use uma imagem como link-->
+<a href="https://pt.wikipedia.org/wiki/HTML">
+    <img src="imagens/imagem.png" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+
+
+<!--
+    Link para um endereço de e-mail
+    Use mailto:dentro do hrefatributo para criar um link que abre o programa de e-mail
+    do usuário (para permitir que ele envie um novo e-mail):
+ -->
+<p><a href="mailto:ericksonlopes20@gmail.com">Eviar um email</a></p>
+
+
+<!--Botão como um link-->
+<p><button onclick="document.location='default.asp'">HTML Tutorial</button></p>
+
+
+<!--
+    Títulos de link
+    O titleatributo especifica informações extras sobre um elemento.
+    As informações geralmente são mostradas como um texto de dica de
+    ferramenta quando o mouse se move sobre o elemento.
+-->
+<p><a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Títulos de link</a></p>
+
+</body>
+</html>
