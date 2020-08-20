@@ -3,33 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+<!--Um CSS interno é definido na <head>seção de uma página HTML, dentro de um <style>elemento.-->
+    <style>
+    h1 {
+      color: blue;
+      font-family: verdana;
+      font-size: 300%;
+    }
+    p {
+      color: red;
+      font-family: courier;
+      font-size: 160%;
+
+<!--      Uso da propriedade CSS border: -->
+      border: 2px solid powderblue;
+    }
+    </style>
+
 </head>
-<!--A background-color propriedade CSS define a cor de fundo de um elemento HTML.-->
-<body style="background-color:powderblue;">
+<body>
+
+<h1 >A Blue Heading</h1>
+<p >A red paragraph.</p>
 
 
-<!--Definindo cor de fundo para elementos diferentes-->
-<h1 style="background-color:red;">H1</h1>
-<p style="background-color:tomato;">P</p>
+<!--
+Um CSS embutido usa o styleatributo de um elemento HTML.
+O exemplo a seguir define a cor do texto do <h1>elemento como azul e a cor do texto do <p>elemento como vermelho:
+-->
 
-
-<!--A color propriedade CSS define a cor do texto para um elemento HTML:-->
-<h1 style="color:blue;">This is a heading</h1>
-<p style="color:red;">This is a paragraph.</p>
-
-
-<!--A font-familypropriedade CSS define a fonte a ser usada para um elemento HTML:-->
-<h1 style="font-family:verdana;">This is a heading</h1>
-<p style="font-family:courier;">This is a paragraph.</p>
-
-<!--A font-sizepropriedade CSS define o tamanho do texto para um elemento HTML:-->
-<h1 style="font-size:300%;">This is a heading</h1>
-<p style="font-size:160%;">This is a paragraph.</p>
-
-<!--A text-alignpropriedade CSS define o alinhamento horizontal do texto para um elemento HTML:-->
-<h1 style="text-align:center;">Centered Heading</h1>
-<p style="text-align:center;">Centered paragraph.</p>
-
+<h1 style="color:green;">A Blue Heading</h1>
+<p style="color:green;">A red paragraph.</p>
 
 </body>
 </html>
