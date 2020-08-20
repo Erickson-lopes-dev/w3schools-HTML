@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--
+    Para adicionar uma borda a uma tabela, use a border propriedade CSS :
+
+    Para permitir que as bordas se contraiam em uma borda, adicione a border-collapse propriedade CSS :
+
+    Para alinhar à esquerda os títulos da tabela, use a text-alignpropriedade CSS :
+
+    Para definir o espaçamento da borda de uma tabela, use a border-spacingpropriedade CSS :
+-->
+    <style>
+        table th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+        }
+
+        td {
+            text-align: center;
+        }
+        table {
+            border-spacing: 5px;
+        }
+    </style>
+</head>
+<body>
+<!--
+
+A <table>tag define uma tabela HTML.
+
+Cada linha da tabela é definida com uma <tr>tag. Cada cabeçalho da tabela é definido com uma <th> tag.
+ Cada dado / célula da tabela é definido com uma <td> tag.
+
+Por padrão, o texto nos <th>elementos está em negrito e centralizado.
+
+Por padrão, o texto nos <td>elementos é regular e alinhado à esquerda
+
+-->
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table >
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+        }
+
+        td {
+            text-align: center;
+        }
+        table {
+            border-spacing: 5px;
+        }
+
+
+        #t01 {
+          width: 100%;
+          background-color: #f1f1c1;
+        }
+
+        #t01 tr:nth-child(even) {
+          background-color: #eee;
+        }
+        #t01 tr:nth-child(odd) {
+          background-color: #fff;
+        }
+        #t01 th {
+          color: white;
+          background-color: black;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+      Para fazer uma célula ocupar mais de uma coluna, use o colspan atributo:
+    <th colspan="2">Telephone</th>
+  </tr>
+  <tr>
+    <td>Bill Gates</td>
+    <td>55577854</td>
+    <td>55577855</td>
+  </tr>
+</table>
+
+
+<br> <br> <br> <br>
+
+Para fazer uma célula ocupar mais de uma linha, use o rowspan atributo:
+<table style="width:100%">
+  <tr>
+    <th>Name:</th>
+    <td>Bill Gates</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Telephone:</th>
+    <td>55577854</td>
+  </tr>
+  <tr>
+    <td>55577855</td>
+  </tr>
+</table>
+
+<br> <br> <br> <br>
+
+<!--Para adicionar uma legenda a uma tabela, use a <caption>tag:-->
+<table style="width:100%">
+  <caption>Para adicionar uma legenda a uma tabela,</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+
+<br> <br> <br> <br>
+
+Para definir um estilo especial para uma tabela específica, adicione um id atributo à tabela:
+
+<table id="t01">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+</body>
+</html>
