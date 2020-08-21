@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--O <form>elemento HTML é usado para criar um formulário HTML para entrada do usuário:-->
+<form>
+.
+form elements
+.
+</form>
+
+<!--
+O <input>elemento HTML é o elemento de formulário mais usado.
+Um <input>elemento pode ser exibido de várias maneiras, dependendo do type atributo.
+-->
+<form>
+    <input type = "text">
+    <input type = "radio">
+    <input type="time" >
+    <input type = "submit">
+    <input type = "button">
+</form>
+
+<!--O <input type="text"> define um campo de entrada de linha única para entrada de texto.-->
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+
+<br>
+<!--
+Observe o uso do <label>elemento no exemplo acima.
+A <label>tag define um rótulo para muitos elementos do formulário.
+O <label>elemento é útil para usuários de leitores de tela, porque o leitor de
+ tela lerá em voz alta o rótulo quando o usuário focar no elemento de entrada.
+O <label>elemento também ajuda os usuários que têm dificuldade em clicar em
+regiões muito pequenas (como botões de rádio ou caixas de seleção) - porque
+quando o usuário clica no texto dentro do <label>elemento, ele alterna o botão de rádio / caixa de seleção.
+O foratributo da <label>tag deve ser igual ao idatributo do <input> elemento para uni-los.
+-->
+
+<!--O <input type="radio">define um botão de opção.-->
+<form>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+</form>
+
+<!--O <input type="checkbox">define uma caixa de seleção .-->
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label>
+</form>
+
+
+<!--
+O <input type="submit">define um botão para enviar os dados do formulário a um manipulador de formulários.
+O manipulador de formulários é normalmente um arquivo no servidor com um script para processar dados de entrada.
+O anipulador de formulários é especificado no action atributo do formulário .
+-->
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<!--
+O methodatributo especifica o método HTTP a ser usado ao enviar os dados do formulário.
+Os dados do formulário podem ser enviados como variáveis ​​de URL (com method="get") ou como transação HTTP post (com method="post").
+O método HTTP padrão ao enviar dados do formulário é GET.
+-->
+<form action="/action_page.php" method="get"></form>
+
+<!--
+Cada campo de entrada deve ter um name atributo a ser enviado.
+Se o name atributo for omitido, o valor desse campo de entrada não será enviado.
+-->
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" value="John"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+</body>
+</html>

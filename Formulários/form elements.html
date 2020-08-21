@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ul>
+<li> <code class="w3-codespan">&lt;input&gt;</code></li>
+  <li> <code class="w3-codespan">&lt;label&gt;</code></li>
+  <li> <code class="w3-codespan">&lt;select&gt;</code></li>
+<li> <code class="w3-codespan">&lt;textarea&gt;</code></li>
+<li> <code class="w3-codespan">&lt;button&gt;</code></li>
+<li> <code class="w3-codespan">&lt;fieldset&gt;</code></li>
+  <li> <code class="w3-codespan">&lt;legend&gt;</code></li>
+  <li> <code class="w3-codespan">&lt;datalist&gt;</code></li>
+  <li> <code class="w3-codespan">&lt;output&gt;</code></li>
+<li> <code class="w3-codespan">&lt;option&gt;</code></li>
+<li> <code class="w3-codespan">&lt;optgroup&gt;</code></li>
+</ul>
+
+<!--
+Um dos elementos de formulário mais usados ​​é o <input>elemento.
+O <input>elemento pode ser exibido de várias maneiras, dependendo do type atributo.
+-->
+<form>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname">
+</form>
+
+<!--O <select>elemento define uma lista suspensa:-->
+<form>
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+
+<!--Use o sizeatributo para especificar o número de valores visíveis:-->
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars" size="3">
+         <option value="volvo">Volvo</option>
+         <option value="saab">Saab</option>
+         <option value="fiat">Fiat</option>
+         <option value="audi">Audi</option>
+    </select>
+
+<!--    Use o multiplea tributo para permitir que o usuário selecione mais de um valor:-->
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars" size="4" multiple>
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+
+<!--
+    O <textarea> elemento define um campo de entrada de várias linhas (uma área de texto):
+    O rowsatributo especifica o número visível de linhas em uma área de texto.
+    O colsatributo especifica a largura visível de uma área de texto.
+-->
+    <textarea name="message" rows="10" cols="30">
+        The cat was playing in the garden.
+    </textarea>
+
+<!--    Você também pode definir o tamanho da área de texto usando CSS:-->
+    <textarea name="message" style="width:200px; height:600px;">
+        The cat was playing in the garden.
+    </textarea>
+
+<!--    O <button>elemento define um botão clicável:-->
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+</form>
+
+<!--
+O <fieldset> elemento é usado para agrupar dados relacionados em um formulário.
+O <legend>elemento define uma legenda para o <fieldset> elemento.
+-->
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+<!--
+O elemento <datalist>
+O <datalist> elemento especifica uma lista de opções predefinidas para um <input>elemento.
+Os usuários verão uma lista suspensa das opções predefinidas à medida que inserem os dados.
+O listatributo do <input> elemento deve se referir ao idatributo do <datalist>elemento
+-->
+<form action="/action_page.php">
+  <input list="browsers">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+</form>
+
+<!--O <output>elemento representa o resultado de um cálculo (como um executado por um script).-->
+<form action="/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    <fieldset>
+          0
+          <input type="range"  id="a" name="a" value="50">
+          100 +
+          <input type="number" id="b" name="b" value="50">
+          =
+          <output name="x" for="a b"></output>
+          <br><br>
+          <input type="submit">
+    </fieldset>
+</form>
+</body>
+</html>
