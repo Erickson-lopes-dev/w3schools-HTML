@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      aside {
+        width: 30%;
+        padding-left: 15px;
+        margin-left: 15px;
+        float: right;
+        font-style: italic;
+        background-color: lightgray;
+      }
+      </style>
+</head>
+<body>
+<!--
+O <header>elemento representa um contêiner para conteúdo introdutório ou um conjunto de links de navegação.
+
+Um <header>elemento normalmente contém:
+
+um ou mais elementos de título (<h1> - <h6>)
+logotipo ou ícone
+informação de autoria
+Nota: Você pode ter vários <header>elementos em um documento HTML. No entanto,
+<header>não pode ser colocado dentro de uma <footer>, <address>ou de outro <header>elemento.
+-->
+<article>
+  <header>
+    <h1>What Does WWF Do?</h1>
+    <p>WWF's mission:</p>
+  </header>
+  <p>WWF's mission is to stop the degradation of our planet's natural environment,
+  and build a future in which humans live in harmony with nature.</p>
+</article>
+
+<!--
+O <footer>elemento define um rodapé para um documento ou seção.
+
+Um <footer>elemento normalmente contém:
+
+informação de autoria
+Informações sobre direitos autorais
+Informações de Contato
+Mapa do site
+voltar aos links principais
+documentos relacionados
+Você pode ter vários <footer>elementos em um documento.
+-->
+<footer>
+  <p>Author: Hege Refsnes</p>
+  <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer>
+
+
+<!--
+Elemento HTML <nav>
+O <nav>elemento define um conjunto de links de navegação.
+Observe que NÃO todos os links de um documento devem estar dentro de um <nav>elemento.
+O <nav>elemento destina-se apenas ao bloco principal de links de navegação.
+Navegadores, como leitores de tela para usuários com deficiência, podem usar este elemento para
+determinar se deve omitir a renderização inicial deste conteúdo.
+-->
+<nav>
+  <a href="/html/">HTML</a> |
+  <a href="/css/">CSS</a> |
+  <a href="/js/">JavaScript</a> |
+  <a href="/jquery/">jQuery</a>
+</nav>
+
+
+
+<!--O <aside>conteúdo deve estar indiretamente relacionado ao conteúdo circundante.-->
+<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+<aside>
+<h4>Epcot Center</h4>
+<p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+
+
+<!--
+A <figure>tag especifica conteúdo independente, como ilustrações, diagramas, fotos, listagens de código, etc.
+A <figcaption> tag define uma legenda para um <figure>elemento.
+O <figcaption> elemento pode ser colocado como o primeiro ou o último filho de um <figure>elemento.
+O <img>elemento define a imagem / ilustração real.
+-->
+<figure>
+  <img src="imagens/imagem.png" alt="Trulli">
+  <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+</figure>
+
+
+</body>
+</html>
