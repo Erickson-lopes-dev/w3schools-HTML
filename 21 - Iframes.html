@@ -5,6 +5,32 @@
     <title>Title</title>
 </head>
 <body>
+<!--
+A <iframe>tag HTML especifica um quadro embutido.
+Ou você pode adicionar o styleatributo e usar o CSS heighte as width propriedades
+-->
+<iframe src="04_-_Basic.html" title="basic html"></iframe>
+
+
+<!--
+Por padrão, um iframe possui uma borda ao seu redor.
+
+Para remover a borda, adicione o styleatributo e use a borderpropriedade CSS :
+-->
+<iframe src="04_-_Basic.html" style="height:200px;width:300px;" title="Iframe Example"></iframe>
+
+<!--Com CSS, você também pode alterar o tamanho, estilo e cor da borda do iframe:-->
+<iframe src="04_-_Basic.html" style="border:2px solid red;" title="Iframe Example"></iframe>
+
+<!--Para remover a borda, adicione o styleatributo e use a borderpropriedade CSS :-->
+<iframe src="04_-_Basic.html" style="border:none;" title="Iframe Example"></iframe>
+
+<!--
+Um iframe pode ser usado como o quadro de destino de um link.
+O targetatributo do link deve se referir ao nameatributo do iframe:
+-->
+<iframe src="04_-_Basic.html" name="iframe_a" title="Iframe Example"></iframe>
+<p><a href="https://www.w3schools.com/html/html_iframe.asp" target="iframe_a">W3Schools.com</a></p>
 
 </body>
 </html>
